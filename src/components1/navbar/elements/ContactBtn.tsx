@@ -1,8 +1,5 @@
 'use client'
 import useWindowSize from './WindowSize'; // Adjust path if needed
-
-import { useGlobalState } from "@/contexts/GlobalStateContext";
-import { useEffect } from "react";
 import { useState } from "react";
 import Confetti from 'react-confetti';
 const ContactBtn = ({title}:{title:string}) => {
