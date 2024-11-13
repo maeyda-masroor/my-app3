@@ -5,6 +5,7 @@ import Resume from "@/components/MyResume";
 import Contact from "@/components/ContactMe";
 import Footer from "@/components/Footer";
 import Project from "@/components/Projects";
+import H1 from "@/components/H1";
 export default function Home() {
   return (
     <div>
@@ -15,6 +16,7 @@ export default function Home() {
       <Project/>
       <Contact/>
       <Footer/>
+      <H1/>
     </div>
   );
 }
