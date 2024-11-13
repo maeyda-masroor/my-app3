@@ -1,5 +1,5 @@
 export default function H1(){
     return (
-        <div>cc</div>
+        <div className="text-black">cc</div>
     )
 }
