@@ -13,7 +13,7 @@ export const useGlobalState = (): GlobalState => {
   return context;
 };
 
-export const GlobalStateProvider = ({ children }: {children: any}) => {
+export const GlobalStateProvider = ({ children }: {children: React.ReactNode}) => {
   const [isMenuOpen, setMenuOpen] = useState<boolean>(false);
   const [isModalOpen, setModalOpen] = useState<boolean>(false);
 
