@@ -23,7 +23,7 @@ function BurgerMenu (){
         return () => {
           window.removeEventListener('resize', exitMenu);
         };
-    }, [isMenuOpen]);
+    }, [isMenuOpen,exitMenu]);
 
     return (<div className="desktop:hidden">
         <div className="fixed top-0 right-0 p-2 z-50" onClick={toggleMenu}>

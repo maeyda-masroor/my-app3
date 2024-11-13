@@ -12,3 +12,7 @@ export interface GlobalState {
     desc: string;
     img: string;
   }
+  export interface ITestState{
+    children : any // eslint-disable-line @typescript-eslint/no-explicit-any
+  }
+  

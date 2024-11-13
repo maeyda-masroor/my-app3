@@ -47,9 +47,8 @@ export default function Footer(){
           <div className="p-2 w-full max-w-md">
             <div className="flex space-x-1">
             {socialMediaLinks.map((social, index) => (
-              <div className="text-white w-1/8 ">
-                <Link href = {social.link_to} key={index}><Image src={social.link_src} 
-                key={index}
+              <div className="text-white w-1/8 " key={index}>
+                <Link href = {social.link_to}><Image src={social.link_src} 
                 width={50} height={50} alt="d"
                 />
                 </Link>
