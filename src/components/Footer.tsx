@@ -1,5 +1,17 @@
 import Image from "next/image"
 import Logo from '../../public/logo.png';
+import Link from "next/link";
+const socialMediaLinks = [
+  {
+      link_src:'https://img.icons8.com/?size=100&id=16713&format=png&color=000000',
+      link_to:'www.google.com'
+  },
+  {
+      link_src:'https://img.icons8.com/?size=100&id=32323&format=png&color=000000',
+      link_to:'www.facebook.com'
+  }
+]
+
 export default function Footer(){
     return (
         <div className="grid place-items-center bg-pink border-black border-t-2">
@@ -34,64 +46,17 @@ export default function Footer(){
           </div>
           <div className="p-2 w-full max-w-md">
             <div className="flex space-x-1">
+            {socialMediaLinks.map((social, index) => (
               <div className="text-white w-1/8 ">
-                <Image src='https://img.icons8.com/?size=100&id=16713&format=png&color=000000' 
+                <Link href = {social.link_to} key={index}><Image src={social.link_src} 
+                key={index}
                 width={50} height={50} alt="d"
                 />
+                </Link>
               </div>
-              <div className=" text-white w-1/8 ">
-                <Image src='https://img.icons8.com/?size=100&id=32323&format=png&color=000000'
-                width={50} height={50} alt="d"/>
+              ))}
               </div>
-              <div className="text-white w-1/8 ">
-                <Image src='https://img.icons8.com/?size=100&id=16713&format=png&color=000000' 
-                width={50} height={50} alt="d"
-                />
               </div>
-              <div className=" text-white  w-1/8 ">
-                <Image src='https://img.icons8.com/?size=100&id=32323&format=png&color=000000'
-                width={50} height={50} alt="d"/>
-              </div>
-              <div className="text-white  w-1/8 ">
-                <Image src='https://img.icons8.com/?size=100&id=16713&format=png&color=000000' 
-                width={50} height={50} alt="d"
-                />
-              </div>
-              <div className=" text-white  w-1/8 text-center">
-                <Image src='https://img.icons8.com/?size=100&id=32323&format=png&color=000000'
-                width={50} height={50} alt="d"/>
-              </div>
-              <div className="text-white  w-1/8 ">
-                <Image src='https://img.icons8.com/?size=100&id=16713&format=png&color=000000' 
-                width={50} height={50} alt="d"
-                />
-              </div>
-              <div className=" text-white w-1/8 ">
-                <Image src='https://img.icons8.com/?size=100&id=32323&format=png&color=000000'
-                width={50} height={50} alt="d"/>
-              </div>
-              <div className="text-white w-1/8 ">
-                <Image src='https://img.icons8.com/?size=100&id=16713&format=png&color=000000' 
-                width={50} height={50} alt="d"
-                />
-              </div>
-              <div className=" text-white  w-1/8 ">
-                <Image src='https://img.icons8.com/?size=100&id=32323&format=png&color=000000'
-                width={50} height={50} alt="d"/>
-              </div>
-              <div className="text-white  w-1/8 ">
-                <Image src='https://img.icons8.com/?size=100&id=16713&format=png&color=000000' 
-                width={50} height={50} alt="d"
-                />
-              </div>
-              <div className=" text-white w-1/8 ">
-                <Image src='https://img.icons8.com/?size=100&id=32323&format=png&color=000000'
-                width={50} height={50} alt="d"/>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        
+              </div>  
     )
 }

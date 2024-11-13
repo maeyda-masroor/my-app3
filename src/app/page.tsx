@@ -6,17 +6,24 @@ import Contact from "@/components/ContactMe";
 import Footer from "@/components/Footer";
 import Project from "@/components/Projects";
 import H1 from "@/components/H1";
+import Navbar from "../components1/layout/Navbar1";
+import { GlobalStateProvider } from "@/contexts/GlobalStateContext";
+import BurgerMenu from "../components1/navbar/BurgerNavbar";
+import Modal from "../components1/layout/Model";
 export default function Home() {
   return (
-    <div>
+      <GlobalStateProvider >
+      <Navbar />
+      <Modal />
+      <BurgerMenu />
       <Hero_Section/>
-      <FeatureSection/>
+      {/*<FeatureSection/>
       <SkillSection/>
       <Resume/>
       <Project/>
       <Contact/>
       <Footer/>
-      <H1/>
-    </div>
+  <H1/>*/}
+    </GlobalStateProvider>
   );
 }
