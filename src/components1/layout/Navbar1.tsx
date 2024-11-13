@@ -1,9 +1,8 @@
 'use client'
-import { useState } from "react";
 import useScrollPos from "@/hooks/useScrollPos";
 import MenuItem from "../navbar/elements/navbarItem";
 import ContactBtn from "../navbar/elements/ContactBtn";
-import Confetti from 'react-confetti';
+
 function Navbar() {
 
     const isAtTop = useScrollPos();
