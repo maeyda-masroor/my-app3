@@ -1,7 +1,7 @@
 type CircularProgressBarProps = {
   progress: number;
-  size?:any;
-  strokeWidth?:any;
+  size?:number;
+  strokeWidth?:number;
 };
 const CircularProgressBar : React.FC<CircularProgressBarProps> = ({
   progress,     // Initialized with default

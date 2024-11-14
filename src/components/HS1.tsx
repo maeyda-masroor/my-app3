@@ -5,7 +5,6 @@ import LogoSlider from "./LogoSlider";
 import styles from './WavingHand.module.css';
 function HS1() {
     return <div className="bg-white" id="About">
-        <img className="w-full h-44" src="/transitions/transition_gradient.svg" alt="transition" />
         <div className="flex justify-center items-center text-white">
             <div className="flex flex-row w-full">
                 <div className="flex desktop:w-1/2 mobile:w-full mobile:p-4 flex-col desktop:p-20">
