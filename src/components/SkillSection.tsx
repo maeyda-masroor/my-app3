@@ -1,4 +1,4 @@
-import CircularProgressBar from "./CircularProgressBar";
+
 import Reactjs from './Reactjs';
 import JAVASCRIPT from './Javascript';
 export default function SkillSection(){
@@ -9,7 +9,6 @@ export default function SkillSection(){
         <div className="flex flex-row p-4 gap-16">
         <div className="flex-1 bg-amber-200 p-4 items-center animate-bounce rounded-2xl">
         <div className="w-16 h-20">
-            <CircularProgressBar/>
         </div>
         <br/>
         <div className="text-2xl font-semibold text-black">REACTJS</div>
@@ -32,22 +31,19 @@ export default function SkillSection(){
     <div className="flex flex-row p-4 gap-16">
     <div className="flex-1 bg-amber-200 p-4 items-center animate-bounce rounded-2xl">
     <div className="w-16 h-20">
-            <CircularProgressBar/>
         </div>
         <br/>
         <div className="text-2xl font-semibold text-black">REACTJS</div>
     </div>
     <div className="flex-1 bg-amber-200 p-4 items-center animate-bounce rounded-2xl">
     <div className="w-16 h-20">
-            <CircularProgressBar/>
         </div>
         <br/>
         <div className="text-2xl font-semibold text-black">REACTJS</div>
     </div>
     <div className="flex-1 bg-amber-200 p-4 animate-bounce rounded-2xl">
     <div className="w-16 h-20">
-            <CircularProgressBar/>
-        </div>
+    </div>
         <br/>
         <div className="text-2xl font-semibold text-black">REACTJS</div>
    </div>

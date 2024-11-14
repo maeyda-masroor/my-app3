@@ -4,7 +4,7 @@ import Burger from "./elements/HamBurger";
 import Close from "./elements/Close";
 import Menu from "./elements/Navbar";
 import { useEffect } from "react";
-import { useGlobalState } from "@/contexts/GlobalStateContext";
+import { useGlobalState } from "../../contexts/GlobalStateContext";
 
 
 function BurgerMenu (){

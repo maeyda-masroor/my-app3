@@ -1,13 +1,10 @@
-import Hero_Section from "@/components/HeroSection1";
-{/*
-import FeatureSection from "@/components/FeatureSection";
-import SkillSection from "@/components/SkillSection";
+import Hero_Section from "../components/HS1";
+import Features from '../components/FS1';
+import Skill from '../components/Skill';
+import Project from "@/components/Project1";
 import Resume from "@/components/MyResume";
 import Contact from "@/components/ContactMe";
-import Footer from "@/components/Footer";
-import Project from "@/components/Projects";
-import H1 from "@/components/H1";
-*/}
+import Footer from "../components/Footer";
 import Navbar from "../components1/layout/Navbar1";
 import { GlobalStateProvider } from "@/contexts/GlobalStateContext";
 import BurgerMenu from "../components1/navbar/BurgerNavbar";
@@ -19,13 +16,15 @@ export default function Home() {
       <Modal />
       <BurgerMenu />
       <Hero_Section/>
-      {/*<FeatureSection/>
-      <SkillSection/>
-      <Resume/>
+      <Features/>
+      <Skill/>
       <Project/>
+      {/*<FeatureSection/>
+      <SkillSection/>*/}
+      <Resume/>
+      {/*<Project/>*/}
       <Contact/>
       <Footer/>
-  <H1/>*/}
-    </GlobalStateProvider>
+     </GlobalStateProvider>
   );
 }

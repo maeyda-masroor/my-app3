@@ -1,4 +1,13 @@
-const CircularProgressBar = ({ progress = 75, size = 100, strokeWidth = 8 }) => {
+type CircularProgressBarProps = {
+  progress: number;
+  size?:any;
+  strokeWidth?:any;
+};
+const CircularProgressBar : React.FC<CircularProgressBarProps> = ({
+  progress,     // Initialized with default
+  size=8,                   // Initialized with default
+  strokeWidth=100                 // Must be provided by the user
+}) => {
     const radius = (size - strokeWidth) / 2;
     const circumference = 2 * Math.PI * radius;
     const offset = circumference - (progress / 100) * circumference;

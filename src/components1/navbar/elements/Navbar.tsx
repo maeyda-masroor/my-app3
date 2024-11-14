@@ -7,7 +7,7 @@ function Menu (){
         <MenuItem title={"About"}/>
         <MenuItem title={"Projects"}/>
         <MenuItem title={"Services"}/>
-        <ContactBtn title={'Contact Me'} />
+        <ContactBtn/>
         </>);
 }
 
